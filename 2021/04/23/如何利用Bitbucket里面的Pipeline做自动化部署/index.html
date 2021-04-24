@@ -154,9 +154,10 @@ MathJax = {
 <p>实现步骤：</p>
 <h3 id="1、配置SSH-key到服务器"><a href="#1、配置SSH-key到服务器" class="headerlink" title="1、配置SSH key到服务器"></a>1、配置SSH key到服务器</h3><ul>
 <li>将pipelines 的Public key 配置到远程服务器 ~/.ssh/authorized_keys里</li>
-<li>Pipeline的Public Key获取路径Repository settings =&gt; PIPELINES =&gt; SSH keys，见下图：<br><img src="https://tangtaorong86.oss-cn-beijing.aliyuncs.com/uPic/image.png" alt="image"><br>![image(1)](<a target="_blank" rel="noopener" href="https://tangtaorong86.oss-cn-beijing.aliyuncs.com/uPic/image">https://tangtaorong86.oss-cn-beijing.aliyuncs.com/uPic/image</a> (1).png)</li>
+<li>Pipeline的Public Key获取路径Repository settings =&gt; PIPELINES =&gt; SSH keys，见下图：<br><img src="https://tangtaorong86.oss-cn-beijing.aliyuncs.com/uPic/image.png" alt="image"></li>
 </ul>
-<h3 id="2、-配置Deployments"><a href="#2、-配置Deployments" class="headerlink" title="2、 配置Deployments"></a>2、 配置Deployments</h3><p>这里配置的environment是可以和pipeline里的branch对应的，所以每个environment里的变量就可以在这里进行托管，每个environment都会用到的公共变量，就可以到Repository variables里配置<br>![image(2)](<a target="_blank" rel="noopener" href="https://tangtaorong86.oss-cn-beijing.aliyuncs.com/uPic/image">https://tangtaorong86.oss-cn-beijing.aliyuncs.com/uPic/image</a> (2).png)</p>
+<p> <img src="https://tangtaorong86.oss-cn-beijing.aliyuncs.com/uPic/image1.png" alt="image1"></p>
+<h3 id="2、-配置Deployments"><a href="#2、-配置Deployments" class="headerlink" title="2、 配置Deployments"></a>2、 配置Deployments</h3><p>这里配置的environment是可以和pipeline里的branch对应的，所以每个environment里的变量就可以在这里进行托管，每个environment都会用到的公共变量，就可以到Repository variables里配置<br> <img src="https://tangtaorong86.oss-cn-beijing.aliyuncs.com/uPic/image2.png" alt="image2"></p>
 <h3 id="3、-编写bitbucket-pipelines-yml"><a href="#3、-编写bitbucket-pipelines-yml" class="headerlink" title="3、 编写bitbucket-pipelines.yml"></a>3、 编写bitbucket-pipelines.yml</h3><p>根据自己的业务要求，编写一个正确的bitbucket-pipelines.yml</p>
 <p><a target="_blank" rel="noopener" href="https://bitbucket-pipelines.prod.public.atl-paas.net/validator">传送门：bitbucket验证pipeline的在线工具</a></p>
 <p>例如：</p>
